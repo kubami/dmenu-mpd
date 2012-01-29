@@ -1,5 +1,5 @@
 ### INTRODUCTION
-mpd_control aims to provide a fast, keyboard-driven way to interact with
+dmenu-mpd aims to provide a fast, keyboard-driven way to interact with
 the music play daemon. It uses dmenu to list artists, albums etc. It does 
 not intend to provide a full replacement for graphical mpd-clients.
 
