@@ -92,7 +92,7 @@ case $1 in
 			while true; do
 				
 				TITLES=$(mpc list title artist "$ARTIST" album "$ALBUM")
-				TITLE=$(echo -e "replace all\nadd all\n--------------------------\n$TITLES" | $DMENU -p titles:);
+				TITLE=$(echo -e "replace all\nadd all\n--------------------------\n$TITLES" | $DMENU -p tracks:);
 				if [ "$TITLE" = "" ]; then break
 				elif [ "$TITLE" = "replace all" ]; then
 					CUR_SONG=$(mpc current)
@@ -178,7 +178,7 @@ case $1 in
 		while true; do
 			
 			TITLES=$(mpc list title album "$ALBUM")
-			TITLE=$(echo -e "replace all\nadd all\n--------------------------\n$TITLES" | $DMENU -p titles:);
+			TITLE=$(echo -e "replace all\nadd all\n--------------------------\n$TITLES" | $DMENU -p tracks:);
 			if [ "$TITLE" = "" ]; then break
 			elif [ "$TITLE" = "replace all" ]; then
 				CUR_SONG=$(mpc current)
